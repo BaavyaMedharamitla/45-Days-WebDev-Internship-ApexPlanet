@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling & JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Task 3: Advanced Styling and JavaScript</h1>
+  </header>
+
+  <main class="container">
+    <!-- Quiz Section -->
+    <section class="quiz">
+      <h2>Quick Quiz</h2>
+      <p>What is the output of 2 + 2?</p>
+      <div class="options">
+        <button onclick="checkAnswer(3)">3</button>
+        <button onclick="checkAnswer(4)">4</button>
+        <button onclick="checkAnswer(5)">5</button>
+      </div>
+      <p id="quizResult"></p>
+    </section>
+<!-- Carousel Section -->
+<section class="carousel">
+    <h2>Image Carousel</h2>
+    <div class="carousel-wrapper">
+      <button class="nav-btn left" onclick="changeSlide(-1)">&#8592;</button>
+      <img id="carouselImage" src="https://images.pexels.com/photos/1403653/pexels-photo-1403653.jpeg" alt="Carousel Image" />
+      <button class="nav-btn right" onclick="changeSlide(1)">&#8594;</button>
+    </div>
+  </section>
+   
+    <!-- Joke Section -->
+    <section class="joke">
+      <h2>Get a Random Joke</h2>
+      <button onclick="getJoke()">Fetch Joke</button>
+      <p id="jokeDisplay"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 | Task 3 – Advanced JS & Styling</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

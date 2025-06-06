@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 2 – Form & To-Do</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Intermediate Web Project</h1>
+    <p>HTML, CSS, JS • Form Validation & To-Do List</p>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Contact Form</h2>
+      <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="todo-section">
+      <h2>To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Enter a task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <div id="taskList" class="task-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | WebDev Intern Task 2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
